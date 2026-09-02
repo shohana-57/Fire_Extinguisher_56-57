@@ -19,7 +19,7 @@ Built as a project for **Embedded System and Internet of Things Laboratory (CSE 
 - 🛑 Stops spraying automatically once the flame is no longer detected
 - 📷 Streams a real-time camera view to a phone via ESP32-CAM
 - ☁️ Reports live status (fire / spraying / idle) to the Blynk app
-- 🎮 Manual drive control from the app — *planned, not yet implemented*
+- 🎮 Manual drive control from the app 
 
 ## System Architecture
 
@@ -105,12 +105,11 @@ Follow the [Pin Connections](#pin-connections) table and the [system diagram](do
 1. Open `firmware/fire_extinguisher_car.ino` in the Arduino IDE.
 2. Select **Board: Arduino UNO** and the correct COM port.
 3. Upload.
-4. If your flame sensor modules trigger the opposite way (HIGH instead of LOW when fire is detected), flip the `FIRE_DETECTED` constant near the top of the sketch.
 
 ### 3. Set up the ESP32-CAM + Blynk
 
 1. Create a Blynk template for the project and note the template ID / auth token.
-2. Flash the ESP32-CAM with your Wi-Fi credentials and Blynk auth token (camera-streaming + Blynk sketch not included in this repo yet — add yours under `firmware/`).
+2. Flash the ESP32-CAM with your Wi-Fi credentials and Blynk auth token.
 3. In the Blynk app, add widgets for: fire status, spraying status, and a link/webview to the ESP32-CAM's video stream.
 
 ### 4. Power on and test
@@ -122,8 +121,7 @@ Power the motors/pump circuit and the ESP32-CAM from adequately rated supplies (
 ```
 fire-extinguisher-robot-car/
 ├── README.md
-├── firmware/
-│   └── fire_extinguisher_car.ino     # Arduino sketch (sensing, driving, spraying)
+├── fire_extinguisher_car.ino     # Arduino sketch (sensing, driving, spraying)
 └── docs/
     ├── system_diagram.png            # System block diagram
 ```
