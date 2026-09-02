@@ -33,8 +33,6 @@ The two boards talk over a simple UART link: the Arduino sends a one-character s
 
 ## How It Works
 
-Workflow diagram
-
 1. On power-up, the servo centers, the pump stays off, and the motors are stopped.
 2. The Arduino continuously reads all three flame sensors.
 3. No flame detected → stay stopped and keep scanning.
@@ -128,7 +126,6 @@ fire-extinguisher-robot-car/
 │   └── fire_extinguisher_car.ino     # Arduino sketch (sensing, driving, spraying)
 └── docs/
     ├── system_diagram.png            # System block diagram
-    └── workflow_diagram.png          # Operational workflow flowchart
 ```
 
 ## Report
