@@ -83,7 +83,7 @@ The two boards talk over a simple UART link: the Arduino sends a one-character s
 
 **L298N motors:** Left motor pair → OUT1/OUT2 · Right motor pair → OUT3/OUT4 · `+12V`/`GND` → battery
 
-**ESP32-CAM:** `U0T (TX)` → Arduino D2 · `U0R (RX)` → Arduino D3 · `GND` → common ground · `5V` → its own stable supply (don't share the Arduino's 5V rail — the camera needs more current than that can reliably provide)
+**ESP32-CAM:** `U0T (TX)` → Arduino D2 · `U0R (RX)` → Arduino D3 · `GND` → common ground · `5V` → its own stable supply
 
 > **Note:** Arduino GND, L298N GND, and ESP32-CAM GND must all be tied together as a common ground.
 
