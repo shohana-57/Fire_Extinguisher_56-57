@@ -136,7 +136,4 @@ A full project report — objective, introduction, theory, workflow, circuit dia
 - Switch flame sensors to analog reading for graded distance/intensity, instead of the current digital on/off detection
 - Add a water-level check so the robot flags when the tank runs low
 
-## License
-
-Add a license of your choice (e.g. MIT) before making the repo public.
 
