@@ -23,7 +23,7 @@ Built as a project for **Embedded System and Internet of Things Laboratory (CSE 
 
 ## System Architecture
 
-![System block diagram](docs/system_diagram.png)
+![System block diagram](docs.pdf)
 
 Two controllers split the work:
 - **Arduino UNO** — handles everything real-time and safety-critical: reading the flame sensors, driving the motors, aiming the servo, and switching the pump.
@@ -33,7 +33,7 @@ The two boards talk over a simple UART link: the Arduino sends a one-character s
 
 ## How It Works
 
-![Workflow diagram](docs/workflow_diagram.png)
+Workflow diagram
 
 1. On power-up, the servo centers, the pump stays off, and the motors are stopped.
 2. The Arduino continuously reads all three flame sensors.
@@ -100,7 +100,7 @@ The two boards talk over a simple UART link: the Arduino sends a one-character s
 
 ### 1. Wire the hardware
 
-Follow the [Pin Connections](#pin-connections) table and the [system diagram](docs/system_diagram.png) above. Double-check the common ground before powering anything on.
+Follow the [Pin Connections](#pin-connections) table and the [system diagram](docs.pdf) above. Double-check the common ground before powering anything on.
 
 ### 2. Flash the Arduino
 
